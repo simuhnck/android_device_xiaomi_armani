@@ -80,7 +80,7 @@ MAX_EGL_CACHE_KEY_SIZE := 12*1024
 MAX_EGL_CACHE_SIZE := 2048*1024
 
 # Hardware tunables
-BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/cmhw/
+BOARD_HARDWARE_CLASS := $(LOCAL_PATH)/mkhw/
 
 # Headers
 TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
@@ -92,7 +92,7 @@ TARGET_LIBINIT_DEFINES_FILE := $(LOCAL_PATH)/init/init_armani.cpp
 
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/xiaomi/armani
-TARGET_KERNEL_CONFIG := cyanogenmod_armani_defconfig
+TARGET_KERNEL_CONFIG := mokee_armani_defconfig
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := arm-linux-androideabi-
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=armani
 BOARD_KERNEL_BASE := 0x00000000
